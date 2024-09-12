@@ -6,7 +6,6 @@ class Animal {
     private boolean friendly;
     private String home;
 
-
     // Constructor to initialize the Animal object
     public Animal(String name, int age, float weight, String colour, boolean friendly, String home) {
         this.name = name;
@@ -127,7 +126,7 @@ class Bird extends Animal {
     private int numberOfWings;
     private boolean canFly;
 
-    // Constructor for Cat that calls the parent constructor
+    // Constructor for Bird that calls the parent constructor
     public Bird(String name, int age, float weight, String colour, boolean friendly, String home, int numberOfWings, boolean canFly) {
         super(name, age, weight, colour, friendly, home);
         this.numberOfWings = numberOfWings;
@@ -162,7 +161,7 @@ class Bird extends Animal {
     }
 }
 
-// Inheritance: Cat class inherits from Animal class
+// Inheritance: Fish class inherits from Animal class
 class Fish extends Animal {
 
     private int numberOfFins;
@@ -179,7 +178,7 @@ class Fish extends Animal {
         System.out.println("I'm a fish.  I don't make sounds!");
     }
 
-    // Additional method specific to Bird class
+    // Additional method specific to Fish class
     public void swim() {
         System.out.println(getName() + " is swimming in the ocean!");
     }
